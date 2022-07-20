@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digi_pack_login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <style>
+        * {
+            transition: .3s;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+        }
+
+        /* --------------------size-------------------- */
+
+        .fs1125 {
+            font-size: 1.125rem;
+        }
+
+        .fs125 {
+            font-size: 1.25rem;
+        }
+
+        .fs1 {
+            font-size: 1rem;
+        }
+
+        .px6 {
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+
+        /* --------------------login-------------------- */
+
+        .logo {
+            width: auto;
+            height: 4rem;
+        }
+
+        @media (max-width:640px) {
+            .logo {
+                width: auto;
+                height: 3rem;
+            }
+        }
+
+        .bg {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .bgl {
+            background-color: rgb(82, 82, 82);
+
+        }
+
+        .bgr {
+            background-color: rgb(22, 36, 70);
+        }
+
+        @media (max-width:991px) {
+            .bgr {
+                background-color: rgb(82, 82, 82);
+            }
+        }
+
+        .inputbox {
+            width: 100%;
+            background-color: black;
+        }
+
+        .inputbox:focus {
+            background-color: black;
+        }
+
+        .icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 0.125rem white solid;
+            color: white;
+            font-size: 1.125rem;
+            font-weight: 700;
+            border-radius: 999rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0.125rem;
+        }
+
+        .title {
+            font-size: 3rem;
+            letter-spacing: 0.025em;
+            line-height: 1;
+            font-weight: 700;
+            color: white;
+        }
+
+        .sub {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            color: white;
+        }
+
+        .fb {
+            width: 1.5em;
+            height: 1.5em;
+            background-image: url(./img/fb-3.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .twr {
+            width: 1.5em;
+            height: 1.5em;
+            background-image: url(./img/twr-3.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .ig {
+            width: 1.5em;
+            height: 1.5em;
+            background-image: url(./img/ig-3.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="row m-0 p-0">
+
+        <div class="bg bgl d-flex align-items-center position-relative">
+
+            <div class="col-6 d-none d-lg-block px6">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="title">Keep it special</div>
+                    <div class="sub my-3 ">Capture your personal memory in unique way, anywhere.</div>
+                </div>
+            </div>
+
+            <div class="position-absolute" style="bottom:0rem;right: calc(75% - 4.25rem)">
+                <div class="d-flex justify-content-center p-3">
+                    <div class="twr"></div>
+                    <div class="fb mx-3"></div>
+                    <div class="ig"></div>
+                </div>
+            </div>
+
+            <div class="bg bgr col-12 col-lg-6 px-0 px-md-5  d-flex flex-column justify-content-center">
+
+                <div class="bgr p-3">
+                    <div class="my-3 text-center">
+                        <img class="logo" src="./img/logo_txt.svg">
+                    </div>
+
+                    <div class="d-flex justify-content-center py-4">
+                        <div class="icon">f</div>
+                        <div class="icon mx-2">G+</div>
+                        <div class="icon">in</div>
+                    </div>
+
+                    <div class="text-white text-center">
+                        or use email your account
+                    </div>
+
+                    <div class="col-12 col-sm-8 px-3 px-sm-0 mx-auto">
+
+                        <form class="mb-3">
+                            <div class="form-group pt-3 pb-2 m-0">
+                                <input type="email" class="inputbox form-control fs125 d-block p-3 h-auto border-white"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+
+                            <div class="form-group pt-3 pb-2 m-0">
+                                <input type="password"
+                                    class="inputbox form-control fs125 d-block p-3 h-auto border-white"
+                                    id="exampleInputPassword1" placeholder="Password">
+                            </div>
+
+                            <small id="passwordHelp" class="form-text text-muted text-right m-0 text-nor fs1">
+                                Forgot your password?
+                            </small>
+
+                            <div class="pb-2 pt-3 px-3">
+                                <button type="submit" class="btn btn-primary rounded-pill w-100 fs1125 p-3">SIGN
+                                    IN</button>
+                            </div>
+
+                        </form>
+
+                        <div class="d-flex d-lg-none justify-content-center p-3 mt-5">
+                            <div class="twr"></div>
+                            <div class="fb mx-3"></div>
+                            <div class="ig"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
